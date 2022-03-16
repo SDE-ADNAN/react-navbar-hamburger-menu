@@ -5,28 +5,24 @@ const MenuItems = [
         cName:"nav-links",
     },
     {
-        title:"Home",
+        title:"Services",
         url : "#",
         cName:"nav-links",
     },
     {
-        title:"Home",
+        title:"Products",
         url : "#",
         cName:"nav-links",
     },
     {
-        title:"Home",
+        title:"Contact Us",
         url : "#",
         cName:"nav-links",
     },
     {
-        title:"Home",
+        title:"Sign Up",
         url : "#",
         cName:"nav-links",
     },
-    {
-        title:"Home",
-        url : "#",
-        cName:"nav-links",
-    },
+    
 ]
