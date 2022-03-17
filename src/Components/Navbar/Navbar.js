@@ -11,7 +11,7 @@ class Navbar extends Component {
       <nav className="NavbarItems">
         <h1 className="navbar-logo">React <i className="fab fa-react"></i> </h1>
         <div className="menu-icon" onClick={this.handleChange}>
-            <i className={this.state.clicked ?"fas fa-times": "fas fa-bar"}></i>
+            <i className={this.state.clicked ?"fas fa-times": "fas fa-bars"}></i>
         </div>
         <ul>
           {MenuItems.map((item, index) => {
