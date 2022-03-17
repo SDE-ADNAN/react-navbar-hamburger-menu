@@ -4,11 +4,15 @@ import React, { Component } from "react";
 import { MenuItems } from "./MenuItem";
 
 class Navbar extends Component {
+
+    state={clicked :false}
   render() {
     return (
       <nav className="NavbarItems">
         <h1 className="navbar-logo">React <i className="fab fa-react"></i> </h1>
-        <div className="menu-icon"></div>
+        <div className="menu-icon" onClick={this.handleChange}>
+            <i className={this.state.clicked ?"fas fa-times": "fas fa-bar"}></i>
+        </div>
         <ul>
           {MenuItems.map((item, index) => {
             return (
