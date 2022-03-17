@@ -6,11 +6,17 @@ import { MenuItems } from "./MenuItem";
 class Navbar extends Component {
 
     state={clicked :false}
+
+    handleClick =()=>{
+        this.setState({clicked:!this.state.clicked})
+    }
+
+
   render() {
     return (
       <nav className="NavbarItems">
         <h1 className="navbar-logo">React <i className="fab fa-react"></i> </h1>
-        <div className="menu-icon" onClick={this.handleChange}>
+        <div className="menu-icon" style={{cursor:"pointer"}} onClick={this.handleClick}>
             <i className={this.state.clicked ?"fas fa-times": "fas fa-bars"}></i>
         </div>
         <ul>
